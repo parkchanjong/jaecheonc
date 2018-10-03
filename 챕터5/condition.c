@@ -1,14 +1,21 @@
 #include <stdio.h>
 
-int main(void)
-{
+
+int main(void) {
+
+
+
 	int x, y;
 
 	printf("첫번째 수=");
-	scanf("%d", &x);
+	scanf_s("%d", &x);
 	printf("두번째 수=");
-	scanf("%d", &y);
+	scanf_s("%d", &y);
 
 	printf("큰수=%d \n", (x > y) ? x : y);
 	printf("작은수=%d \n", (x < y) ? x : y);
+
+
+	system("PAUSE");
+	return 0;
 }

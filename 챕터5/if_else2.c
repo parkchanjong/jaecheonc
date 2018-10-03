@@ -1,16 +1,28 @@
 #include <stdio.h>
 
-int main(void)
-{
-	int number;
+
+int main(void) {
+
+
+
+	int num;
 
 	printf("정수를 입력하시오:");
-	scanf("%d", &number);
+	scanf_s("%d", &num);
 
-	if (number % 2 == 0)	// number를 2로 나눈 나머지가 0이면 짝수이다. 
-		printf("입력된 정수는 짝수입니다.\n");
+
+	printf("\n\t |%d| = ", num);
+	if (num < 0)
+		num = num * (-1);
+	printf("%d\n\n", num);
+
+	if (num % 2 == 0)
+		printf("\t%d는 짝수\n\n", num);
 	else				// 그렇지 않으면 홀수이다. 
 		printf("입력된 정수는 홀수입니다.\n");
 
+
+
+	system("PAUSE");
 	return 0;
 }
