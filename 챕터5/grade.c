@@ -1,13 +1,19 @@
-// 성적을 받아서 학점을 결정하는 프로그램
 #include <stdio.h>
 
-int main(void)
-{
+
+
+
+int main(void) {
+
+
+
+
+
 	int score;
 	char grade;
 
 	printf("성적을 입력하시오: ");
-	scanf("%d", &score);
+	scanf_s("%d", &score);
 
 	if (score >= 90)
 		grade = 'A';
@@ -21,5 +27,11 @@ int main(void)
 		grade = 'F';
 
 	printf("학점 %c \n", grade);
+
+
+
+
+
+	system("PAUSE");
 	return 0;
 }

@@ -1,12 +1,18 @@
-// 달의 일수를 계산하는 프로그램
 #include <stdio.h>
 
-int main(void)
-{
+
+
+
+int main(void) {
+
+
+
+
+
 	int month, days;
 
 	printf("일수를 알고 싶은 달을 입력하시오: ");
-	scanf("%d", &month);
+	scanf_s("%d", &month);
 
 	switch (month)
 	{
@@ -22,5 +28,11 @@ int main(void)
 		break;
 	}
 	printf("%d월의 일수는 %d입니다.\n", month, days);
-	return 0;
+
+
+
+
+
+	system("PAUSE");
+
 }
