@@ -10,12 +10,12 @@ int main(void)
 		int x = rand() % 100;
 		int y = rand() % 100;
 		printf("%d + %d = ", x, y);
-		scanf("%d", &ans);
+		scanf_s("%d", &ans);
 		if (x + y == ans) {
 			printf("맞았습니다.\n");
 			break;
 		}
-		else 
+		else
 			printf("틀렸습니다.\n");
 	}
 	return 0;
