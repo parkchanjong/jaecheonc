@@ -1,0 +1,52 @@
+
+#include <stdio.h>
+
+
+
+
+
+
+int main(void) {
+
+
+	int a, b, c;
+
+
+
+	printf("삼각형의 세변을  입력 : ");
+	scanf_s("%d %d %d", &a, &b, &c);
+
+	if (a < 0 || b < 0 || c < 0) {
+		printf("0(음수)가 입력되어 종료합니다.\n");
+		system("PAUSE");
+	}
+
+	while (1) {
+		printf("삼각형의 세변을  입력 : ");
+		scanf_s("%d %d %d", &a, &b, &c);
+		if (a + b <= c || a + c <= b || b + c <= a)
+			printf("삼각형을 만들수 없습니다\n");
+		continue;
+		if (a + b > c || a + c > b || b + c > a)
+			break;
+	}
+
+
+
+	if (a == b && b == c)
+		printf("정삼각형\n");
+	else if (a == b || a == c || b == c)
+		printf("이등변 삼각형\n");
+	else
+		printf("일반삼각형\n");
+
+
+
+
+
+
+
+
+	system("PAUSE");
+
+}
